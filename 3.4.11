@@ -1,0 +1,33 @@
+
+import time
+beatles = ["I don't know bro..."]
+print("Paso 1:", beatles)
+#time.sleep(3)
+print("Maybe...???")
+#time.sleep(1)
+beatles.remove("I don't know bro...")
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print("Paso 2:", beatles)
+#time.sleep(2)
+print("Now....")
+#time.sleep(2)
+new_singers_maybe = ["Stu Sutcliffe", "Pete Best"]
+for singer in new_singers_maybe:
+    xd = input(f"Do you wanna add {singer}??, if yes write that...")
+    if xd == "yes":
+        beatles.append(singer)
+print("Paso 3:", beatles)
+#time.sleep(2)
+print("But they fought bro...xd")
+#time.sleep(2)
+beatles = [singer for singer in beatles if singer not in new_singers_maybe]
+print("Paso 4:", beatles)
+#time.sleep(2)
+print("But we have one more...")
+beatles.insert(0, "Ringo Starr")
+print("Paso 5:", beatles)
+#time.sleep(2)
+print("Los Fav", len(beatles))
+print("Los time.sleep estan suspendidos porque en Cisco Networking Academy se crashea al tener muchos segundos en el temporizador..xdbro")
